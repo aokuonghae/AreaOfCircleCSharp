@@ -25,16 +25,16 @@ namespace AreaOfCircle
             Console.WriteLine("Enter 1 for Circumference");
             Console.WriteLine("Enter 2 for  Area");
 
-            string selection = Console.ReadLine();
-            string userSelection = (selection == "1") ? "circumference." : "area";
+            int selection = int.Parse(Console.ReadLine());
+            string userSelection = (selection == 1) ? "circumference." : "area";
             string printLine = $"The {userSelection} of a circle with radius {radius} is:";
             switch (selection)
             {
-                case "1":
+                case 1:
                     double circumference = Circle.GetCircumferenceOfCircle(radius);
                     Console.WriteLine($"{printLine} {circumference}.");
                     break;
-                case "2":
+                case 2:
                     double area = Circle.GetAreaOfCircle(radius);
                     Console.WriteLine($"{printLine} {area}");
                     break;
