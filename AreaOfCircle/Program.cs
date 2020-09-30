@@ -19,7 +19,7 @@ namespace AreaOfCircle
             }
             while (radius < 0);
              
-            Console.WriteLine("Please select Circumference or Area of a circle");
+            Console.WriteLine("Make a selection: ");
             Console.WriteLine("Enter 1 for Circumference");
             Console.WriteLine("Enter 2 for  Area");
             Console.WriteLine($"Enter 3 to calculate gallons needed to travel a circle of radius {radius}");
@@ -36,6 +36,12 @@ namespace AreaOfCircle
                 case 2:
                     double area = Circle.GetAreaOfCircle(radius);
                     Console.WriteLine($"{printLine} {area}");
+                    break;
+                case 3:
+                    Console.WriteLine("How many miles per gallon?");
+                    double mph=double.Parse(Console.ReadLine());
+                    double numGallons = Circle.GetDistanceTravelled(radius, mph);
+                    Console.WriteLine($"It will take {numGallons}gallons to travel a circle with radius {radius}miles");
                     break;
                 default:
                     break;

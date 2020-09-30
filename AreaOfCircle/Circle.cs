@@ -14,6 +14,13 @@ namespace AreaOfCircle
         {
             double circumference = Math.Round((2 * Math.PI * radius), 2);
             return circumference;
-        }        
+        }  
+        
+        public static double GetDistanceTravelled(double radius, double mph)
+        {
+            double numGallons = GetCircumferenceOfCircle(radius) / mph;
+            return Math.Round(numGallons,2);
+        }
+
     }
 }
