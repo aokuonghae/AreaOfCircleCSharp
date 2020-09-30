@@ -12,13 +12,13 @@ namespace AreaOfCircle
 
             if (input == "" || !Double.TryParse(input, out radius))
             {
-                Console.WriteLine("Your radius is not valid");
+                Console.WriteLine("Radius is not a number. Ending program");
                 Environment.Exit(0);
             }
             radius = Double.Parse(input);
             while (radius < 0)
             {
-                Console.WriteLine("Enter your radius:");
+                Console.WriteLine("Enter a positive radius:");
                 radius = Double.Parse(Console.ReadLine());
             }
             Console.WriteLine("Please select Circumference or Area of a circle");
