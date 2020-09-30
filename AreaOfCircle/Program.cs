@@ -5,25 +5,24 @@ namespace AreaOfCircle
     class Program
     {
         public static void Main(string[] args)
-        {
-            Console.WriteLine("Enter your radius:");
-            string input = Console.ReadLine();            
+        {           
             double radius;
-
-            if (input == "" || !Double.TryParse(input, out radius))
-            {
-                Console.WriteLine("Radius is not a number. Ending program");
-                Environment.Exit(0);
-            }
-            radius = Double.Parse(input);
-            while (radius < 0)
+            do
             {
                 Console.WriteLine("Enter a positive radius:");
-                radius = Double.Parse(Console.ReadLine());
+                if (Console.ReadLine() == "" || !Double.TryParse(Console.ReadLine(), out radius))
+                {
+                    Console.WriteLine("Radius is not a number. Ending program");
+                    Environment.Exit(0);
+                }
+                radius = double.Parse(Console.ReadLine());
             }
+            while (radius < 0);
+             
             Console.WriteLine("Please select Circumference or Area of a circle");
             Console.WriteLine("Enter 1 for Circumference");
             Console.WriteLine("Enter 2 for  Area");
+            Console.WriteLine($"Enter 3 to calculate gallons needed to travel a circle of radius {radius}");
 
             int selection = int.Parse(Console.ReadLine());
             string userSelection = (selection == 1) ? "circumference." : "area";
