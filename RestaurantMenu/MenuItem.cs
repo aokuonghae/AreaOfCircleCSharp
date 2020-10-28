@@ -13,10 +13,10 @@ namespace RestaurantMenu
 
 		public MenuItem(double price, string description, string category, Boolean isNew)
 		{
-			this.Price = price;
-			this.Description = description;
-			this.Category = category;
-			this.IsNew = isNew;
+			this.price = price;
+			this.description = description;
+			this.category = category;
+			this.isNew = isNew;
 		}
 		public MenuItem(string description, string category) : this(0, description, category, false)
 		{ }
@@ -25,5 +25,23 @@ namespace RestaurantMenu
 		public string Description { get => description; set => description = value; }
 		public string Category { get => category; set => category = value; }
 		public bool IsNew { get => isNew; set => isNew = value; }
-	}
+
+		public string IsItemNew()
+        {
+			return isNew ? "This item is new!" : "This item is not new.";
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is MenuItem item &&
+                   description == item.description &&
+                   category == item.category ;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(description);
+        }
+    }
+
 }

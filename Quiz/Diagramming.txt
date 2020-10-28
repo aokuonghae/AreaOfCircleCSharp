@@ -1,0 +1,35 @@
+﻿CheckBox () ==>
+Single Question
+Point Value
+Multiple Answers <List>
+Multiple Answer <List>
+Print the question and possible answers
+Get User input
+Check for correct Answer
+
+MultipleChoice () ==>
+Single Question 
+Point Value
+Single Answer <List>
+Multiple Answer Options <List>
+Print the question and possible answers
+Get User input
+Check for correct Answer
+
+TrueFalse () ==>
+Single Question
+Point Value
+Print the question and possible answer options
+Get User input
+Check for correct Answer
+
+COMMON VARIABLES viable for abstract class
+Abstract Question () ==>
+
+PointValue
+QuizQuestions
+Print the question
+Abstract Print answer options
+Abstract Get User input
+Abstract Check for correct Answer
+

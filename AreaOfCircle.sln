@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaOfCircle", "AreaOfCircl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountingCharacters", "CountingCharacters\CountingCharacters.csproj", "{9D82FC44-4994-4A98-A1FD-95CB203D0CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu", "RestaurantMenu\RestaurantMenu.csproj", "{F9B80C4A-4B2E-4B75-B15F-4AAE483E6CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantMenu", "RestaurantMenu\RestaurantMenu.csproj", "{F9B80C4A-4B2E-4B75-B15F-4AAE483E6CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz", "Quiz\Quiz.csproj", "{CF8D8861-BBF3-4B08-B77B-1549EEA72721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F9B80C4A-4B2E-4B75-B15F-4AAE483E6CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B80C4A-4B2E-4B75-B15F-4AAE483E6CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B80C4A-4B2E-4B75-B15F-4AAE483E6CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8D8861-BBF3-4B08-B77B-1549EEA72721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8D8861-BBF3-4B08-B77B-1549EEA72721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8D8861-BBF3-4B08-B77B-1549EEA72721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8D8861-BBF3-4B08-B77B-1549EEA72721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
